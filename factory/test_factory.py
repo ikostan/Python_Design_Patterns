@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-from classes.factories.dog_factory import DogFactory
-from classes.factories.cat_factory import CatFactory
-from classes.factories.pet_store import PetStore
+from classes.patterns.factories.dog_factory import DogFactory
+from classes.patterns.factories.cat_factory import CatFactory
+from classes.patterns.factories.pet_store import PetStore
 
 
 def main():
