@@ -1,5 +1,5 @@
 # Python: Design Patterns
-Design patterns encourage programming efficiency and code reuse. This library is a look at traditional design patterns as applied to Python
+Design patterns encourage programming efficiency and code reuse. This library is a look at traditional design patterns as applied to Python.
 
 ### Topics include:
 - Understanding design patterns<br/>
