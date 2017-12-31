@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from classes.patterns.builder.builder import Builder
+from builder_sample.builder.builder import Builder
 
 
 class BMW(Builder):
