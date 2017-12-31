@@ -11,7 +11,7 @@ def main():
         attempts to build a complex object using an excessive number of constructors.
         The Builder pattern is trying to solve this problem.
         Think of a scenario, in which you're trying to build a car.
-        This requires various car parts to be first constructed individually and then assembled.
+        This requires various car car_parts to be first constructed individually and then assembled.
 
         The Builder pattern brings an order to this chaotic process to remove this unnecessary
         complexity in building a complex object.

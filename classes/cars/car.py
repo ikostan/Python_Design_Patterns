@@ -7,6 +7,7 @@ class Car:
         self._model = None
         self._tires = None
         self._engine = None
+        self._gear = None
 
     def __str__(self):
-        return '{} {} {}'.format(self._model, self._tires, self._engine)
+        return '{}, {}, {}, {}'.format(self._model, self._tires, self._engine, self._gear)

@@ -5,7 +5,7 @@ from builder_sample.builder.builder import Builder
 class BMW(Builder):
     """
         Concrete Builder class
-            --> provides parts and tools in order to create an specific type of a ca
+            --> provides car_parts and tools in order to create an specific type of a ca
     """
 
     def add_model(self):
@@ -16,4 +16,7 @@ class BMW(Builder):
 
     def add_engine(self):
         self.car._engine = "Turbo v8"
+
+    def add_gear(self):
+        self.car._gear = "Manual"
 
