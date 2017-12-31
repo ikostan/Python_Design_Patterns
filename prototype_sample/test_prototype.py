@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+from classes.cars.car import Car
+from prototype_sample.prototype import Prototype
 
 
 def main():
@@ -11,6 +13,17 @@ def main():
     """
 
     print('Prototype pattern:\n')
+
+    car = Car()
+    car.set_engine(4)
+    car.set_model("Honda")
+    car.set_transmission("Automatic")
+    car.set_tires("Regular")
+
+    prototype = Prototype()
+    prototype.register_obj("Honda", car)
+    clone = prototype.clone("Honda")
+    print(clone)
 
 
 if __name__ == '__main__':
