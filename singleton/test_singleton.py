@@ -19,6 +19,7 @@ def main():
         There are also a number of ways of implementing Singleton,
         but we'll be using the Borg design pattern to implement our Singleton.
     """
+    print('Singleton example:\n')
 
 
 if __name__ == '__main__':

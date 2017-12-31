@@ -2,11 +2,13 @@
 from classes.borg import Borg
 
 
-class Singelton():
+class Singleton(Borg):
 
     def __init__(self, **kwargs):
         """Updates an attributes dictionary by inserting a new key-value pairs"""
         Borg.__init__(self)
+        self._shared_state.Update(kwargs)
 
     def __str__(self):
         """Returns the attribute dictionary for printing"""
+        return str(self._shared_state)

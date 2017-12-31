@@ -3,7 +3,8 @@
 
 class Borg:
     """Borg class holds global attributes"""
+    _shared_state = {}
 
     def __init__(self):
         """Create an attributes dictionary"""
-        pass
+        self.__dict__ = self._shared_state
