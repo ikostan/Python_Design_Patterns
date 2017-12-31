@@ -3,7 +3,6 @@
 
 class Car:
     """Car product"""
-
     def __init__(self):
         self._model = None
         self._tires = None

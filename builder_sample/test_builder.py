@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+from classes.cars.bmw_builder import BMW
+from classes.cars.director import Director
 
 
 def main():
@@ -28,6 +30,12 @@ def main():
         building a complex object through a divide and conquer strategy.
     """
     print('Builder example:\n')
+
+    bmw = BMW()  # Concrete Builder
+    director = Director(bmw)  # Director instance using instance of a concrete class/builder
+    director.construct_car()
+    car = director.get_car()
+    print(car)
 
 
 if __name__ == '__main__':
