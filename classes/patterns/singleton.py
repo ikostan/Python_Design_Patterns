@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from classes.borg import Borg
+from classes.patterns.borg import Borg
 
 
 class Singleton(Borg):
@@ -7,7 +7,7 @@ class Singleton(Borg):
     def __init__(self, **kwargs):
         """Updates an attributes dictionary by inserting a new key-value pairs"""
         Borg.__init__(self)
-        self._shared_state.Update(kwargs)
+        self._shared_state.update(kwargs)
 
     def __str__(self):
         """Returns the attribute dictionary for printing"""

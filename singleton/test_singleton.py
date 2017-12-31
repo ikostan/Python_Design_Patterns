@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from classes.patterns.singleton import Singleton
 
 
 def main():
@@ -20,6 +21,12 @@ def main():
         but we'll be using the Borg design pattern to implement our Singleton.
     """
     print('Singleton example:\n')
+
+    s0 = Singleton(HTTP='Hyper Text Transfer Protocol')
+    print(s0)
+
+    s1 = Singleton(SNMP='Simple Network Management Protocol')
+    print(s1)
 
 
 if __name__ == '__main__':
