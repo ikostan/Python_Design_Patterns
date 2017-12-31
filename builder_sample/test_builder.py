@@ -32,13 +32,13 @@ def main():
     """
     print('Builder example:\n')
 
-    bmw = BMW()  # Concrete Builder
+    bmw = BMW(8, 1)  # Concrete Builder
     director = Director(bmw)  # Director instance using instance of a concrete class/builder
     director.construct_car()
     car1 = director.get_car()
     print(car1)
 
-    ford = Ford()  # Concrete Builder
+    ford = Ford(6, 2)  # Concrete Builder
     director = Director(ford)  # Director instance using instance of a concrete class/builder
     director.construct_car()
     car2 = director.get_car()

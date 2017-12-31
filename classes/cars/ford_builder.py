@@ -10,15 +10,18 @@ class Ford(Builder):
         Concrete Builder class
             --> provides car_parts and tools in order to create an specific type of a ca
     """
+    def __init__(self, cylinders, tires):
+        self._cylinders = cylinders
+        self._tires = tires
 
     def add_model(self):
         self.car._model = "Ford"
 
     def add_tires(self):
-        self.car._tires = Tire().get_tire()
+        self.car._tires = Tire(self._tires).get_tire()
 
     def add_engine(self):
-        self.car._engine = Engine().get_engine()
+        self.car._engine = Engine(self._cylinders).get_engine()
 
     def add_transmission(self):
         self.car._transmission = Transmission(2).get_transmission()

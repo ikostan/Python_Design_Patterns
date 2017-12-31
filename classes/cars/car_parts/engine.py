@@ -3,8 +3,12 @@
 
 class Engine:
 
-    def __init__(self):
-        pass
+    def __init__(self, cylinders):
+        if 0 < cylinders < 13:
+            self._cylinders = cylinders
+        else:
+            raise Exception("Cylinders number must be between 0 and 12")
 
     def get_engine(self):
-        return self._engine
+        engine = 'v{}'.format(self._cylinders)
+        return engine
