@@ -1,4 +1,7 @@
 #!/usr/div/env python3
+from proxy_sample.proxy import Proxy
+from proxy_sample.producer import Producer
+
 """
 Proxy becomes handy when creating an object that is very resource intensive.
 The problem we need to solve here is to postpone our object creation as long as possible,
@@ -18,6 +21,11 @@ Adapter and Decorator are related to the Proxy design pattern.
 
 def main():
     print("Proxy test:\n")
+
+    proxy = Proxy()
+    proxy.produce()
+    proxy.set_occupied(True)
+    proxy.produce()
 
 
 if __name__ == "__main__":
