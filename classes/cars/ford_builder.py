@@ -17,6 +17,6 @@ class Ford(Builder):
     def add_engine(self):
         self.car._engine = "v6"
 
-    def add_gear(self):
-        self.car._gear = "Automate"
+    def add_transmission(self):
+        self.car._transmission = "Automate"
 

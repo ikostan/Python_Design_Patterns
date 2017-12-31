@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 
-class Gear:
+class Transmission:
 
     def __init__(self):
         pass
