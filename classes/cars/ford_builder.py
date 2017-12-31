@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 from builder_sample.builder.builder import Builder
 from classes.cars.car_parts.transmission import Transmission
+from classes.cars.car_parts.engine import Engine
+from classes.cars.car_parts.tire import Tire
 
 
 class Ford(Builder):
@@ -13,10 +15,10 @@ class Ford(Builder):
         self.car._model = "Ford"
 
     def add_tires(self):
-        self.car._tires = "Regular tires"
+        self.car._tires = Tire().get_tire()
 
     def add_engine(self):
-        self.car._engine = "v6"
+        self.car._engine = Engine().get_engine()
 
     def add_transmission(self):
         self.car._transmission = Transmission(2).get_transmission()
