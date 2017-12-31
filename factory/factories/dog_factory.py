@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from animals.dog import Dog
+from classes.animals.dog import Dog
 
 
 class DogFactory:

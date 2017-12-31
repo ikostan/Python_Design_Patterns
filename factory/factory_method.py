@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-from animals.dog import Dog
-from animals.cat import Cat
-from animals.pet import Pet
-from animals.animal import Animal
+from classes.animals.dog import Dog
+from classes.animals.cat import Cat
+from classes.animals.pet import Pet
+from classes.animals.animal import Animal
 
 
 def get_pet(pet):

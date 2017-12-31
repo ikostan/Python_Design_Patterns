@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from animals.cat import Cat
+from classes.animals.cat import Cat
 
 
 class CatFactory:
