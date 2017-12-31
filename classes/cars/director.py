@@ -13,7 +13,7 @@ class Director:
         self._builder.add_model()
         self._builder.add_tires()
         self._builder.add_engine()
-        self._builder.add_gear()
+        self._builder.add_transmission()
 
     def get_car(self):
         return self._builder.get_car()

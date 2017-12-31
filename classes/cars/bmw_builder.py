@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 from builder_sample.builder.builder import Builder
+from classes.cars.car_parts.transmission import Transmission
 
 
 class BMW(Builder):
@@ -17,6 +18,6 @@ class BMW(Builder):
     def add_engine(self):
         self.car._engine = "Turbo v8"
 
-    def add_gear(self):
-        self.car._gear = "Manual"
+    def add_transmission(self):
+        self.car._transmission = Transmission(1).get_transmission()
 

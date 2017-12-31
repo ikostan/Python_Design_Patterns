@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from classes.cars.ford_builder import Ford
 from classes.cars.bmw_builder import BMW
 from classes.cars.director import Director
 
@@ -34,8 +35,14 @@ def main():
     bmw = BMW()  # Concrete Builder
     director = Director(bmw)  # Director instance using instance of a concrete class/builder
     director.construct_car()
-    car = director.get_car()
-    print(car)
+    car1 = director.get_car()
+    print(car1)
+
+    ford = Ford()  # Concrete Builder
+    director = Director(ford)  # Director instance using instance of a concrete class/builder
+    director.construct_car()
+    car2 = director.get_car()
+    print(car2)
 
 
 if __name__ == '__main__':
