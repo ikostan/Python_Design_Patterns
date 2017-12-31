@@ -6,7 +6,7 @@ from classes.animals.animal import Animal
 
 
 def get_pet(pet):
-    """The factory method"""
+    """The factory_sample method"""
     pets = dict(dog=Dog('Max'), cat=Cat('Tom'))
     return pets[pet]
 

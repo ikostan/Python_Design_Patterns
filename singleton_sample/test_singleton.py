@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from classes.patterns.singleton import Singleton
+from classes.patterns.singeltons.singleton import Singleton
 
 
 def main():
