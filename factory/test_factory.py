@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from classes.factories import DogFactory
+from classes.factories.dog_factory import DogFactory
 from classes.factories.cat_factory import CatFactory
 from classes.factories.pet_store import PetStore
 
