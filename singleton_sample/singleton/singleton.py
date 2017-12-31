@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from singleton_sample.singleton import Borg
+from singleton_sample.singleton.borg import Borg
 
 
 class Singleton(Borg):
