@@ -2,8 +2,9 @@
 
 
 class Adapter:
-    def __init__(self, object, **adapted_method):
-        self._object
+    def __init__(self, obj, **adapted_method):
+        self._object = obj
+        self.__dict__.update(adapted_method)
 
     def __getattr__(self, attr):
-        pass
+        return getattr(self._object, attr)

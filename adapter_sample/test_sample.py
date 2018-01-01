@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+from adapter_sample.korean import Korean
+from adapter_sample.british import British
+from adapter_sample.adapter import Adapter
+
 
 """
 Adapter converts the interface of a class into another one a client is expecting.
@@ -15,6 +19,16 @@ Bridges and decorators are related to the adapter pattern.
 def main():
 
     print('Adapter example:\n')
+
+    objects = []
+    korean = Korean()
+    british = British()
+    objects.append(Adapter(korean, speak=korean.speak_korean()))
+    objects.append(Adapter(british, speak=british.speak_english()))
+
+
+    for i in objects:
+        print('{} says: {}'.format(i._name, i.speak))
 
 
 if __name__ == '__main__':
